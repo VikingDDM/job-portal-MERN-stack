@@ -1,0 +1,584 @@
+/* #cover-image{
+    padding-top:0px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#target {
+    width: 130px;
+    height: 120px;
+    border-radius: 50%;
+    
+    background-size: 50% 100%;
+    object-fit: cover;
+    margin-top: -10%;
+    margin-left:20px;
+    object-position: center right;
+  }
+  #target1 {
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    
+    background-size: 50% 100%;
+    object-fit: cover;
+    margin-top: -8%;
+    margin-left:20px;
+    object-position: center right;
+  }
+#fname{
+    font-size: 24px;
+    padding-right:2%;
+    font-family:'Lato','Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+    padding-left: 0px;
+  }
+
+  #lname{
+    font-size: 24px;
+    
+    font-family:'Lato','Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+    padding-left: 0px;
+  }
+
+  #headline{
+    font-size: 20px;
+    padding-top: 2%;
+    font-family:'Lato','Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+    padding-left: 0px;
+  }
+  #location{
+    font-size: 16px;
+    font-family:'Lato','Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+    padding-left: 0px;
+    color: rgba(0,0,0,.6);
+    padding-bottom: 2%;
+  }
+
+  #profile-section{
+      background-color: #0073b1;
+      text-align: left;
+      font-weight: bold;
+      width:60%;
+      color:white;
+      font-family:'Lato','Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+  }
+
+  #exampleModal{
+    width:80%;
+    padding-left: 30%;
+    padding-top:3%;
+  }
+
+  #educationmodal{
+    width:80%;
+    padding-left: 30%;
+    padding-top:3%;
+  }
+
+  #editProfileModal{
+    width: auto;
+    padding-top:3%;
+  }
+  #work-exp-form{
+    padding-bottom: 1%;
+  }
+
+  .profileModal{
+    max-width: 80%;
+  }
+
+  .Names input{
+    float:left;
+  } */
+
+
+  /**************Profile page css************/
+
+  .user-pro-img
+  {
+    padding-left : 30px;
+  }
+
+
+  .block-row
+  {
+    display: block !important;
+  }
+
+
+  .custom-wrapper
+  {
+    margin-top : 5px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    padding: 0px;
+    margin-bottom: 10px !important;
+  }
+
+  .cover-sec
+  {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-height: 250px;
+    min-height: 250px;
+  }
+
+  .cover-sec img 
+  {
+
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .profile-user-image
+  {
+      width: 160px;
+      height : 160px;
+
+  }
+
+  .profile-user-name
+  {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 30px;
+    font-family: linkedin-regular-font;
+  }
+
+  .profile-user-subname
+  {
+    width : 60%;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top : 8px;
+    font-family: linkedin-regular-font;
+
+  }
+
+
+  .location-text
+  {
+    color: rgba(0,0,0,.6);
+    font-size: 17px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+    font-family: linkedin-regular-font;
+  }
+
+
+  #profile-section
+  {
+    color: #fff;
+    background-color: #0073b1;
+    border-color: #0073b1;
+    font-weight: bold;
+    font-family: linkedin-regular-font;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    padding-right : 30px;
+    border-radius: 2px !important;
+  }
+
+  .dropdown
+  {
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+
+  .user-description
+  {
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+    font-size: 16px;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 24px;
+    font-family: linkedin-regular-font;
+    padding-bottom: 30px;
+  }
+  
+
+  .profile-user-heading
+  {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: linkedin-regular-font;
+  }
+
+
+  .extra-right
+  {
+    right:55px !important;
+  }
+
+  .custom-edit-buttons
+  {
+    cursor: pointer;
+  }
+
+  .detail-boxes
+  {
+    position: relative;
+  }
+
+  .detail-boxes:hover  i
+  {
+    visibility: visible;
+  }
+
+  .detail-boxes i 
+  {
+    float: right;
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    font-size: 20px;
+    transform: translate(-50%,-50%);
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0073b1;
+    visibility: hidden;
+  }
+
+  .detail-boxes i::after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    height: 200%;
+    background: #0374b3;
+    width: 1px;
+    right: -10px;
+    z-index: 11111;
+    top: -50%;
+
+}
+
+.exts
+{
+  width : 220px;
+}
+
+.exts button 
+{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+    padding: 10px;
+    padding-left: 15px;
+    font-family: linkedin-regular-font;
+}
+
+.exts button:hover
+{
+    font-weight: 600;
+}
+
+
+#personalModal .modal-dialog,#skillsModal .modal-dialog,#expModal .modal-dialog,#educationModal .modal-dialog
+{
+  width: 50% !important;
+  max-width: none !important;
+}
+
+#personalModal label,#skillsModal label,#expModal label,#educationModal label
+{
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-family: linkedin-regular-font;
+}
+
+.autocomplete-dropdown-container
+{
+  background: white;
+  box-shadow: 0px 3px 10px 0px #d9d7d7;
+}
+
+
+.suggestion-item
+{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  
+   /* height: 30px;
+ margin-top: 5px !important;
+  margin-bottom: 5px !important; */
+}
+
+.pac-container, .pac-item {
+  width: inherit !important;
+}
+
+
+.exp-title
+{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color : rgba(0,0,0,.9) !important;
+  font-family: linkedin-regular-font;
+}
+
+.exp-company
+{
+  font-size: 18px !important;
+  line-height: 31px !important;
+  color: rgba(0,0,0,.9) !important;
+  font-family: linkedin-regular-font;
+  font-weight: 300;
+}
+
+
+.exp-dates
+{
+  color: rgba(0,0,0,.6);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.exp-location
+{
+  color: rgba(0,0,0,.6);
+  font-size: 14px;
+  font-weight: 300;
+  padding: 5px 0px 15px 0px;
+}
+
+.exp-desc
+{
+  color: rgba(0,0,0,.9);
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 0px 15px 0px;
+}
+
+.skill-sug
+{
+  font-weight: 600 !important;
+  padding : 5px 10px !important;
+}
+
+
+.onlyskillsbt
+{
+  right: 50px !important;
+  font-size: 21px !important;
+}
+
+.modal-body table
+{
+  width : 100%;
+}
+
+.modal-body table td 
+{
+  padding: 5px;
+}
+
+.delete-button{
+  background-color: transparent;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: rgba(0,0,0,.6);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 167ms;
+  transition-property: background-color,box-shadow,color;
+  transition-timing-function: cubic-bezier(0,0,.2,1);
+  vertical-align: middle;
+  z-index: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.6), inset 0 0 0 2px transparent, inset 0 0 0 1px transparent;
+}
+
+.save-button
+{
+  background-color: #0073b1;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 167ms;
+  transition-property: background-color,box-shadow,color;
+  transition-timing-function: cubic-bezier(0,0,.2,1);
+  vertical-align: middle;
+  z-index: 0;
+  margin-left: auto;
+
+}
+
+.save-btn-small
+{
+  background: #0074b6;
+  color: white;
+}
+
+.skilltable
+{
+  margin-top : 20px;
+}
+
+.skilltable thead 
+{
+  font-weight: bold;
+}
+
+.skilltable td 
+{
+  padding: 10px !important;
+}
+
+.skilltable tr td:nth-child(2)
+{
+  text-align: right;
+}
+
+.fa-trash
+{
+  color : #858e97;
+  cursor: pointer;
+}
+
+#skillstable td, #skillstable th
+{
+  border-width : 0px !important;
+}
+
+.right-sidebar
+{
+  padding : 45px 0px !important;
+}
+
+.view-public
+{
+  width: 100%;
+    padding: 4px;
+    height: 40px;
+    font-family: linkedin-regular-font;
+    margin-bottom: 15px;
+}
+
+.view-public:hover
+{
+  color : white !important;
+}
+
+
+.skill-sug h4 
+{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hiddenbox
+{
+  visibility: hidden;
+}
+
+.resume-icon
+{
+        /* float: right; */
+        font-size: 30px;
+        /* position: absolute; */
+        left: 10px;
+        top: 15px;
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #e60922;
+    
+}
+
+.user-resume
+{
+  cursor: pointer;
+}
+
+img[src='/static/media/profile-banner.388781bb.svg']
+{
+  transform: scale(1.5,2);
+}
+
+
+.pos-rel 
+{
+  position: relative;
+}
+
+.user-resume
+{
+  text-align: left !important;
+  padding-left: 30px !important; 
+}
+
+.view-public a
+{
+  color : white !important;
+}
+
+.sgt-text
+{
+  width : 80%;
+  max-width: 80%;
+}
+
+.left-icons 
+{
+  float: left !important;
+  /* width: 100%; */
+  /* padding: 15px 20px; */
+  font-size: 29px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0073b1;
+}
+
+.jobs-sidebar-div
+{
+  display: inline-block;
+  position: absolute;
+  
+}
+
+  /*****************************************/
